@@ -17,6 +17,8 @@ namespace MoreMagic
 {
     class MoreMagic
     {
+        public static EventHandler<AnalyzeEventArgs> OnAnalyzeCast;
+
         private static IModEvents events;
         private static IInputHelper inputHelper;
 
@@ -34,7 +36,18 @@ namespace MoreMagic
             // Inject our new spells
             SpellTools spellTools = new SpellTools();
             spellTools.Populate();
-            
+
+            OnAnalyzeCast += onAnalyze;
+        }
+
+        private static void onAnalyze(object sender, AnalyzeEventArgs e)
+        {
+            var farmer = sender as Farmer;
+            if (farmer != Game1.player)
+                return;
+
+            Log.debug("Analyze caught");
+            List<string> spellsLearnt = new List<string>();
         }
 
         private static void actionTriggered(object sender, EventArgsAction args)

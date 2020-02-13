@@ -18,7 +18,6 @@ namespace MoreMagic.Spells
 
         public override void loadIcon()
         {
-            Log.debug("Running loadIcon for MoreSpell");
             try
             {
                 Icons = new Texture2D[getMaxCastingLevel()];

@@ -30,7 +30,6 @@ namespace MoreMagic
             helper.Events.GameLoop.SaveLoaded += onSaveLoaded;
             helper.Events.GameLoop.Saved += onSaved;
 
-            Log.debug("MoreMagic entry");
             MoreMagic.init(helper.Events, helper.Input, helper.Multiplayer.GetNewID);
         }
 
