@@ -1,0 +1,16 @@
+﻿{
+  "Name": "MoreMagic",
+  "Author": "Elec0",
+  "Version": "0.1.0",
+  "Description": "Adds more magic to Magic!",
+  "UniqueID": "elec0.MoreMagic",
+  "EntryDll": "MoreMagic.dll",
+  "MinimumApiVersion": "2.9.0",
+  "UpdateKeys": [],
+  "Dependencies": [
+   {
+      "UniqueID": "spacechase0.Magic",
+      "MinimumVersion": "0.3.1"
+   }
+]
+}
