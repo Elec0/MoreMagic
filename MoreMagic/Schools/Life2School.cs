@@ -20,7 +20,7 @@ namespace MoreMagic.Schools
             return new Spell[] { SpellBook.get("life2:meditate") };
         }
         
-        /*public override Spell[] GetSpellsTier2()
+        public override Spell[] GetSpellsTier2()
         {
             return new Spell[] { SpellBook.get("life:heal"), SpellBook.get("life:haste") };
         }
@@ -28,6 +28,6 @@ namespace MoreMagic.Schools
         public override Spell[] GetSpellsTier3()
         {
             return new Spell[] { SpellBook.get("life:buff") };
-        }*/
+        }
     }
 }
