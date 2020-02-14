@@ -71,13 +71,13 @@ namespace MoreMagic.Spells
             // Remove the hook
             ModEntry.instance.Helper.Events.GameLoop.UpdateTicked -= this.UpdateTicked;
             ModEntry.instance.Helper.Events.GameLoop.OneSecondUpdateTicked -= this.SecondTicked;
-        }
+        } 
 
         // Do the actual mana regen, since there's no real way to change the mana regen variable like there should be
         private void SecondTicked(object sender, OneSecondUpdateTickedEventArgs e)
         {
             // This runs even if the game is paused, but we don't want to add mana in that case
-            if (Game1.isTimePaused)
+            if (!Game1.shouldTimePass())
                 return;
 
             // Check to see if the buff is still on the player
