@@ -1,4 +1,8 @@
 ﻿{
 	"spell.life2:meditate.name": "Meditate",
-	"spell.life2:meditate.desc": "Meditate to gain mana"
+	"spell.life2:meditate.desc": "Meditate to gain mana",
+	"spell.transmutation:transmuteore.name": "Transmute Ore",
+	"spell.transmutation:transmuteore.desc": "Infuse mana into ore to transmute it to a higher quality",
+	"spell.transmutation:transmutebar.name": "Transmute Bar",
+	"spell.transmutation:transmutebar.desc": "Infuse mana into a bar to transmute it to a higher quality"
 }

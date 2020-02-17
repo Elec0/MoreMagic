@@ -12,6 +12,8 @@ namespace MoreMagic.Spells
         public void Populate()
         {
             Magic.SpellBook.register(new MeditateSpell());
+            Magic.SpellBook.register(new TransmuteSpell(true)); // Transmute Ore
+            Magic.SpellBook.register(new TransmuteSpell(false)); // Transmute Bar
         }
     }
 }

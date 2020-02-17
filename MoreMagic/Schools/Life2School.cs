@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Magic;
+﻿using Magic;
 using Magic.Spells;
-using StardewModdingAPI.Utilities;
 
 namespace MoreMagic.Schools
 {
-    class Life2School : Magic.Schools.School
+    public class Life2School : Magic.Schools.School
     {
         public Life2School() : base(SchoolId.Life2)
         {
@@ -22,12 +16,12 @@ namespace MoreMagic.Schools
         
         public override Spell[] GetSpellsTier2()
         {
-            return new Spell[] { SpellBook.get("life:heal"), SpellBook.get("life:haste") };
+            return new Spell[] { SpellBook.get("life2:meditate"), SpellBook.get("life2:meditate") };
         }
 
         public override Spell[] GetSpellsTier3()
         {
-            return new Spell[] { SpellBook.get("life:buff") };
+            return new Spell[] { SpellBook.get("life2:meditate") };
         }
     }
 }

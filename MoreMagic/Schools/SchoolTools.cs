@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Magic.Schools;
+﻿using Magic.Schools;
 
 namespace MoreMagic.Schools
 {
@@ -16,7 +11,8 @@ namespace MoreMagic.Schools
 
         public void Populate()
         {
-            Magic.Schools.School.registerSchool(new Life2School());
+            School.registerSchool(new Life2School());
+            School.registerSchool(new TransmutationSchool());
         }
     }
 }

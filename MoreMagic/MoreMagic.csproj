@@ -80,9 +80,14 @@
     <Compile Include="Schools\Life2School.cs" />
     <Compile Include="Schools\SchoolId.cs" />
     <Compile Include="Schools\SchoolTools.cs" />
+    <Compile Include="Schools\TransmutationSchool.cs" />
+    <Compile Include="Spells\MarkRecallSpell.cs" />
     <Compile Include="Spells\MeditateSpell.cs" />
     <Compile Include="Spells\MoreSpell.cs" />
+    <Compile Include="Spells\PortalSpell.cs" />
+    <Compile Include="Spells\SecretChestSpell.cs" />
     <Compile Include="Spells\SpellTools.cs" />
+    <Compile Include="Spells\TransmuteSpell.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="i18n\default.json" />
@@ -94,6 +99,10 @@
     <Content Include="res\magic\life2\meditate\2.png" />
     <Content Include="res\magic\life2\meditate\3.png" />
     <Content Include="res\magic\life2\meditate\1.png" />
+    <Content Include="res\magic\transmutation\transmutebar\1.png" />
+    <Content Include="res\magic\transmutation\transmutebar\2.png" />
+    <Content Include="res\magic\transmutation\transmuteore\1.png" />
+    <Content Include="res\magic\transmutation\transmuteore\2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Pathoschild.Stardew.ModBuildConfig.3.1.0\build\Pathoschild.Stardew.ModBuildConfig.targets" Condition="Exists('..\packages\Pathoschild.Stardew.ModBuildConfig.3.1.0\build\Pathoschild.Stardew.ModBuildConfig.targets')" />

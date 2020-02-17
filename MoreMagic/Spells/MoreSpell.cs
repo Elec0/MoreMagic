@@ -16,9 +16,13 @@ namespace MoreMagic.Spells
         {
         }
 
-        public override string getTranslation(string path)
+        public override string getTranslatedName()
         {
-            return ModEntry.instance.Helper.Translation.Get(path);
+            return ModEntry.instance.Helper.Translation.Get("spell." + FullId + ".name");
+        }
+        public override string getTranslatedDescription()
+        {
+            return ModEntry.instance.Helper.Translation.Get("spell." + FullId + ".desc");
         }
 
         public override void loadIcon()

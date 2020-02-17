@@ -59,6 +59,8 @@ namespace MoreMagic
                 {
                     // For testing
                     Game1.player.learnSpell("life2:meditate", 0, true);
+                    Game1.player.learnSpell("transmutation:transmuteore", 0, true);
+                    Game1.player.learnSpell("transmutation:transmutebar", 0, true);
 
                     Game1.player.addMana(Game1.player.getMaxMana());
                 }
